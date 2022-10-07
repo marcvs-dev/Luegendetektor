@@ -81,4 +81,18 @@ Es deutet alles auf eine neue Art von Verband hin.
 Der Täter ist vermutlich ein Arzt oder Helfer. 
 Er wusste wie er das Opfer zu behandeln hatte um sie später noch während Bewusstsein Vergewaltigen konnte. """)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input("Pressen Sie Enter um das Programm zu schließen")
