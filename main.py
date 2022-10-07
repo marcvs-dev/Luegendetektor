@@ -1,3 +1,5 @@
+ #--------------------------------------------------------------------------------------------------------- 
+ #imports
 from csv import excel
 import time
 import pandas as pd
@@ -6,6 +8,7 @@ import os
 
  #--------------------------------------------------------------------------------------------------------- 
 
+#Excel
 
 excel_datei = pd.read_excel("dateien\Mappe1.xlsx") #Fragen und Wichtigkeit
 
@@ -14,6 +17,7 @@ print(excel_datei.iloc[1, 2]) #Zeile 1 Spalte 2 -- Es fängt bei 0 an zu zählen
 
  #--------------------------------------------------------------------------------------------------------- 
 
+#Text
 
 def print_langsam(str):                #Jeder einzelne Buichstabe innerhalb des textes mit print_langsam wird mit 0.06 Sekunden Abstand ausgegeben.
     for letter in str:
@@ -29,7 +33,9 @@ def print_schneller(str):              #Jeder einzelne Buichstabe innerhalb des 
         time.sleep(0.035)
 
 
- #---------------------------------------------------------------------------------------------------------       
+ #---------------------------------------------------------------------------------------------------------   
+ #Programm an sich
+    
 os.system("cls")
 
 print_langsam("Hallo! Sie sind hier da sie ein Verdächtiger im Mordfall von Ulrike sind.")
