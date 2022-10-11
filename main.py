@@ -1,5 +1,4 @@
 from csv import excel
-
 import time
 import pandas as pd
 import sys
@@ -10,13 +9,13 @@ import os
 
 excel_datei = pd.read_excel("dateien/Fragen.xlsx")  #Excel
 
-#print(excel_datei) #Ganze Datei ausgeben
-#print(
- # excel_datei.iloc[1, 2]
-#)  #Zeile 3 Spalte 2 -- Es fängt bei 0 an zu zählen! In Excel muss alles eins runter, damit es funktioniert!
+print(excel_datei) #Ganze Datei ausgeben
+print(
+  excel_datei.iloc[1, 2]
+)  #Zeile 3 Spalte 2 -- Es fängt bei 0 an zu zählen! In Excel muss alles eins runter, damit es funktioniert!
 
 #---------------------------------------------------------------------------------------------------------
-#Text
+#Textgeschwindigkeit
 
 
 def print_langsam(
@@ -38,23 +37,25 @@ def print_schneller(
 
 
 #---------------------------------------------------------------------------------------------------------
-# Programm an sich
-#os.system("cls")
+#Standartabweichung
+
+
+abweichung = pd.read_excel("dateien/Standartabweichung.xlsx")
+print(abweichung.std()) #Berechnet Standartabweichung
 
 
 
-#------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------
+# Programm an sich (Text)
+
+
+
+#---------------------------------------------------------------------------------------------------------
 #Fragen
 input("")#Man muss Enter drücken damit weiterer text ausgegeben wird.
 
 print(
-  excel_datei.iloc[0, 3]
+  excel_datei.iloc[0, 2] #Fängt immer bei 0 an zu Zählen!!
 )  
-
-input("")#Man muss Enter drücken damit weiterer text ausgegeben wird.
-
-
-
-input("")#Man muss Enter drücken damit weiterer text ausgegeben wird.
 
 
