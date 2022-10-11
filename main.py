@@ -48,7 +48,7 @@ def print_schneller(
 input("")#Man muss Enter drücken damit weiterer text ausgegeben wird.
 
 print(
-  excel_datei.iloc[1, 3]
+  excel_datei.iloc[0, 3]
 )  
 
 input("")#Man muss Enter drücken damit weiterer text ausgegeben wird.
