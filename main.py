@@ -2,6 +2,7 @@ from csv import excel
 import time
 import numpy
 import pandas as pd
+import numpy as np
 import sys
 import os
 
@@ -10,10 +11,10 @@ import os
 
 excel_datei = pd.read_excel("dateien/Fragen.xlsx")  #Excel
 
-print(excel_datei) #Ganze Datei ausgeben
-print(
-  excel_datei.iloc[1, 2]
-)  #Zeile 3 Spalte 2 -- Es fängt bei 0 an zu zählen! In Excel muss alles eins runter, damit es funktioniert!
+#print(excel_datei) #Ganze Datei ausgeben
+#print(
+#  excel_datei.iloc[1, 2]
+#)  #Zeile 3 Spalte 2 -- Es fängt bei 0 an zu zählen! In Excel muss alles eins runter, damit es funktioniert!
 
 #---------------------------------------------------------------------------------------------------------
 #Textgeschwindigkeit
@@ -41,11 +42,18 @@ def print_schneller(
 #Standartabweichung
 
 
-gewicht = pd.read_excel("dateien/Standartabweichung.xlsx")
 
-abweichung = (gewicht.std()) #Berechnet Standartabweichung
 
-print(abweichung)
+list = [1,3,3,3,3,1,2,1,2,2,2,1,3,2,3,1,2,1,0,1,1,1,0,1,1,3,1,1,0,1,1,2,1,1,2,1,2,1,3,1,1,1,0,1,1,3,2,1,1,1,2,0,1,1,0,2,1,1,1,2,2,0,1,3,2,2,1,1,2,2,0,1,1,0,1,1,3,1,1,3,1,1,3,1,0,2,3,1,1,1,1,3,0,1,2,1,1,0,1,1,3]
+
+
+print("List : " + str(list))
+
+
+
+st_dev = np.std(list)
+print(st_dev)
+
 
 
 
