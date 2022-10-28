@@ -73,8 +73,3 @@ input("")#Man muss Enter drücken damit weiterer text ausgegeben wird.
 print(
   excel_datei.iloc[0, 2] #Fängt immer bei 0 an zu Zählen!!
 )  
-
-
-
-
-#test marc 
