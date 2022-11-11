@@ -1,11 +1,10 @@
-from csv import excel
-import time
-import numpy
-import pandas as pd
-import numpy as np
-import sys
 import os
-
+import sys
+import time
+from csv import excel
+import numpy
+import numpy as np
+import pandas as pd
 
 
 #---------------------------------------------------------------------------------------------------------
@@ -37,17 +36,32 @@ def std():
 
 
 
-  list = excel_datei.iloc[:, 8]
-
+  list = excel_datei.iloc[:, 9]
   #print("List : " + str(list))
 
 
 
-  st_dev = np.std(list)
+  st_dev_minus_plus = np.std(list)
+  st_dev = (abs(st_dev_minus_plus))
+
   print("Die Standartabweichung der Gewichtung ist", st_dev)
   print("----------------------------------------------------------------")
   print("")
 
+  if st_dev >= 3:
+    print("Die Wahrscheinlichkeit, dass sie die Wahrheit sagen liegt bei 0,2%")
+  elif st_dev >= 2 and st_dev < 3:
+    print("Die Wahrscheinlichkeit, dass sie die Wahrheit sagen liegt bei 4,2%")
+  elif st_dev >= 1 and st_dev < 2:
+    print("Die Wahrscheinlichkeit, dass sie die Wahrheit sagen liegt bei 27,2%")
+  elif st_dev >= 0 and st_dev < 1:
+    print("Die Wahrscheinlichkeit, dass sie die Wahrheit sagen liegt bei 68,2%")
+  elif st_dev == 0:
+    print("Wir glauben dir, die Wahrscheinlichkeit, dass du die Wahrheit sagst ist sehr hoch")
+  else:
+    print("Es ist ein Fehler unterlaufen!")
+    
+  
 std()
 #---------------------------------------------------------------------------------------------------------
 # Programm an sich (Text)
@@ -452,3 +466,5 @@ def fragen():
   time.sleep(3)
 
 fragen() 
+
+
