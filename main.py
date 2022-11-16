@@ -155,7 +155,7 @@ def text():
   -Krankenhaus/Krankenwagen Verband benutzt. (Auch Bundeswehr)
   """)
 
-#text()
+#text()sdfsdf
 
 #---------------------------------------------------------------------------------------------------------
 
