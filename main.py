@@ -6,6 +6,17 @@ import numpy
 import numpy as np
 import pandas as pd
 
+print("""
+██╗     ██╗   ██╗███████╗ ██████╗ ███████╗███╗   ██╗██████╗ ███████╗████████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
+██║     ██║   ██║██╔════╝██╔════╝ ██╔════╝████╗  ██║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║     ██║   ██║█████╗  ██║  ███╗█████╗  ██╔██╗ ██║██║  ██║█████╗     ██║   █████╗  █████╔╝    ██║   ██║   ██║██████╔╝
+██║     ██║   ██║██╔══╝  ██║   ██║██╔══╝  ██║╚██╗██║██║  ██║██╔══╝     ██║   ██╔══╝  ██╔═██╗    ██║   ██║   ██║██╔══██╗
+███████╗╚██████╔╝███████╗╚██████╔╝███████╗██║ ╚████║██████╔╝███████╗   ██║   ███████╗██║  ██╗   ██║   ╚██████╔╝██║  ██║
+╚══════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+von Peter, Marc und Alex
+
+""")
+
 
 #---------------------------------------------------------------------------------------------------------
 #Excel
@@ -62,11 +73,9 @@ def std():
     print("Es ist ein Fehler unterlaufen!")
     
   
-std()
 #---------------------------------------------------------------------------------------------------------
 # Programm an sich (Text)
 def text():
-  os.system("cls") #Leert die Konsole
 
   print_schneller("Hallo! Sie sind hier da sie ein Verdächtiger im Mordfall von Ulrike sind.")
 
@@ -74,94 +83,105 @@ def text():
   """)
 
   print_schneller("""Ich und meine Kollegen werden nun die Geschichte unserer Kenntnisse nacherzählen.
-  Später werden sie noch ein paar Fragen zu diesem Gewaltverbrechen mit Todesfolge stellen.
-  Wir sind bereit.
-  Kamera läuft, Mikro läuft und ein Psychologe sowie ihr Anwalt stehen bereit.
-  Nun zum Geschehen.
+Später werden sie noch ein paar Fragen zu diesem Gewaltverbrechen mit Todesfolge stellen.
+Wir sind bereit.
+Kamera läuft, Mikro läuft und ein Psychologe sowie ihr Anwalt stehen bereit.
+Nun zum Geschehen.
   """)
 
   print("""
   """)
 
   print_schneller("""Am 03.10.2022 wurde die 39-Jährige Ulrike in Suhl grauenhaft Ermordet.
-  Die 39-Jährige besuchte an diesem Tag ihre beste Freundin in Suhl. Ein rotes Haus mit der Hausnummer 16.
-  Sie haben ein wenig gefeiert da sie einen Job gefunden hat.
-  Also tranken sie ein wenig, schauten gemeinsam Fernseher, kochten und backten.
-  Anschließend wollten sie noch um 16:30 Uhr mit dem Hund im Schwarzwald wandern gehen.
+Die 39-Jährige besuchte an diesem Tag ihre beste Freundin in Suhl. Ein rotes Haus mit der Hausnummer 16.
+Sie haben ein wenig gefeiert da sie einen Job gefunden hat.
+Also tranken sie ein wenig, schauten gemeinsam Fernseher, kochten und backten.
+Anschließend wollten sie noch um 16:30 Uhr mit dem Hund im Schwarzwald wandern gehen.
   """)
 
   print("""
   """)
 
   print_schneller("""Als Ulrike das Haus mit ihrem Hund um 16:12 Uhr verließ, kam ein Mann oder eine Frau von hinten.
-  Mit einem gewöhnlichem Kuchenmesser wurde Ulrike 6 mal in den Rücken gestochen.
-  Ulrike viel schnell in schockstarre und konnte so nicht schreien.
-  Als ihr Hund versuchte den Angreifer zu verjagen brachte es nichts.
-  Der Angreifer kennt Hunde und konnte sich so ohne weiteres bewegen.
-  Ulrikes Freundin dachte sich nichts vom bellenden Hund.
-  Sie zog sich schon passend zum Wandern an.
-  Als ihre Freundin nach 5 Minuten immer noch nicht zurück war wurde sie misstrauisch.
-  Sie öffnete die Türe und sah ein riesen Blutfleck auf dem Boden.
-  Ulrikes Hund Bello lag auf dem Blutfleck und rührte sich nicht.
-  Die Freundin geriet in Panik und schrie nach ihrer Freundin.
+Mit einem gewöhnlichem Kuchenmesser wurde Ulrike 6 mal in den Rücken gestochen.
+Ulrike viel schnell in schockstarre und konnte so nicht schreien.
+Als ihr Hund versuchte den Angreifer zu verjagen brachte es nichts.
+Der Angreifer kennt Hunde und konnte sich so ohne weiteres bewegen.
+Ulrikes Freundin dachte sich nichts vom bellenden Hund.
+Sie zog sich schon passend zum Wandern an.
+Als ihre Freundin nach 5 Minuten immer noch nicht zurück war wurde sie misstrauisch.
+Sie öffnete die Türe und sah ein riesen Blutfleck auf dem Boden.
+Ulrikes Hund Bello lag auf dem Blutfleck und rührte sich nicht.
+Die Freundin geriet in Panik und schrie nach ihrer Freundin.
   """)
 
   print("""
   """)
 
   print_schneller("""Niemand Antwortete.
-  Sie rann zurück ins Haus um ihr Handy zu holen um die Polizei zu rufen.
-  Um 16:21 Uhr klingelte es bei der wache.
-  Sofort wurden Spurensicherung und Kommissare sowohl ein Psychologe losgeschickt um den Fundort zu begutachten.
-  Sie hatten keine Spur.
-  Es gab keine Zeugen oder Ähnliches.
-  Nur ein anderer Hundebesitzer hörte das bellen.
-  Die suche war vergeblich.
-  2 Wochen später am 17.10.2022 wurde ihre Leiche halb verscharrt an einem Waldrand gefunden.
-  Es war ein Jäger welcher sofort die Polizei rief.
-  Die Spurensicherung konnte wichtige Dinge Feststellen.
+Sie rann zurück ins Haus um ihr Handy zu holen um die Polizei zu rufen.
+Um 16:21 Uhr klingelte es bei der wache.
+Sofort wurden Spurensicherung und Kommissare sowohl ein Psychologe losgeschickt um den Fundort zu begutachten.
+Sie hatten keine Spur.
+Es gab keine Zeugen oder Ähnliches.
+Nur ein anderer Hundebesitzer hörte das bellen.
+Die suche war vergeblich.
+2 Wochen später am 17.10.2022 wurde ihre Leiche halb verscharrt an einem Waldrand gefunden.
+Es war ein Jäger welcher sofort die Polizei rief.
+Die Spurensicherung konnte wichtige Dinge Feststellen.
   """)
 
   print("""
   """)
 
   print_schneller("""Das Opfer verstarb erst am 05.10.2022 an Verblutung.
-  Es scheint als hätte der Täter versucht sie am Leben zu erhalten jedoch erfolglos.
-  Spuren deuteten auch auf einen Psychopathen hin.
-  Das Opfer wurde noch vor dem Tod misshandelt.
-  Vermutlich war dies das Ziel des Täters, die noch Junge frau zu ermorden.
-  Die Ärztlichen Mittel wurden laut Spurensicherung versucht zu entfernen jedoch Erfolglos.
-  Es deutet alles auf eine neue Art von Verband hin.
-  Der Täter ist vermutlich ein Arzt oder Helfer.
-  Er wusste wie er das Opfer zu behandeln hatte um sie später noch während Bewusstsein Vergewaltigen zu können.
-  Es könnte ein Liebhaber gewesen sein oder ein enger Freund welcher mehr wollte als nur Freunde sein.
-  Noch ist nichts sicher… unwahrscheinlich ist jedoch, dass es ein Fremder war.
-  Der Hund hätte sonst auch anders reagiert.
+Es scheint als hätte der Täter versucht sie am Leben zu erhalten jedoch erfolglos.
+Spuren deuteten auch auf einen Psychopathen hin.
+Das Opfer wurde noch vor dem Tod misshandelt.
+Vermutlich war dies das Ziel des Täters, die noch Junge frau zu ermorden.
+Die Ärztlichen Mittel wurden laut Spurensicherung versucht zu entfernen jedoch Erfolglos.
+Es deutet alles auf eine neue Art von Verband hin.
+Der Täter ist vermutlich ein Arzt oder Helfer.
+Er wusste wie er das Opfer zu behandeln hatte um sie später noch während Bewusstsein Vergewaltigen zu können.
+Es könnte ein Liebhaber gewesen sein oder ein enger Freund welcher mehr wollte als nur Freunde sein.
+Noch ist nichts sicher… unwahrscheinlich ist jedoch, dass es ein Fremder war.
+Der Hund hätte sonst auch anders reagiert.
   """)
 
   print("""
   """)
 
   print_schneller("""Beweise:
-  -Das Messer ist sehr neu.
-  -Entweder für die tat gekauft oder für den Hausgebrauch.
-  -Vielleicht ein Bäcker.
-  -Der Täter musste sehr Blutig gewesen sein.
-  -Das Opfer wurde laut Spurensicherung in einem VW Transporter.
-  -Der wagen hat vermutlich Äußere Schäden am Lack.
-  -Das Opfer verkratzte das Auto laut spuren unter den Fingernägeln.
-  -Vielleich besteht eine Delle im Hintern Teil des dunkel blauen Transporters.
-  -Grüne Fasern gefunden.
-  -Krankenhaus/Krankenwagen Verband benutzt. (Auch Bundeswehr)
+-Das Messer ist sehr neu.
+-Entweder für die tat gekauft oder für den Hausgebrauch.
+-Vielleicht ein Bäcker.
+-Der Täter musste sehr Blutig gewesen sein.
+-Das Opfer wurde laut Spurensicherung in einem VW Transporter.
+-Der wagen hat vermutlich Äußere Schäden am Lack.
+-Das Opfer verkratzte das Auto laut spuren unter den Fingernägeln.
+-Vielleich besteht eine Delle im Hintern Teil des dunkel blauen Transporters.
+-Grüne Fasern gefunden.
+-Krankenhaus/Krankenwagen Verband benutzt. (Auch Bundeswehr)
   """)
 
-#text()sdfsdf
 
 #---------------------------------------------------------------------------------------------------------
 
 #Fragen
 def fragen():
-
+  print("""
+  """)
+  print("""
+  """)
+  print("""
+███████╗██████╗  █████╗  ██████╗ ███████╗███╗   ██╗
+██╔════╝██╔══██╗██╔══██╗██╔════╝ ██╔════╝████╗  ██║
+█████╗  ██████╔╝███████║██║  ███╗█████╗  ██╔██╗ ██║
+██╔══╝  ██╔══██╗██╔══██║██║   ██║██╔══╝  ██║╚██╗██║
+██║     ██║  ██║██║  ██║╚██████╔╝███████╗██║ ╚████║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝
+                                                   
+""")
   print("Kommen wir nun zu den Fragen.")
   print("----------------------------------------------------------------")
   print("Frage:", excel_datei.iloc[	0,2	], "\nAntwort:", excel_datei.iloc[	0,6	])
@@ -465,6 +485,12 @@ def fragen():
   print("----------------------------------------------------------------")
   time.sleep(3)
 
-fragen() 
 
 
+
+
+text()
+fragen()
+std() 
+
+time.sleep(200)
