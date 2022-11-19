@@ -5,6 +5,7 @@ from csv import excel
 import numpy
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 #---------------------------------------------------------------------------------------------------------
@@ -36,12 +37,22 @@ def std():
 
 
 
-  list = excel_datei.iloc[:, 9]
+  liste = excel_datei.iloc[:, 9]
   #print("List : " + str(list))
 
+  data = pd.read_excel("dateien/fragen.xlsx")
 
+  y= data["Herzschlag"][:101]
+  x = []
 
-  st_dev_minus_plus = np.std(list)
+  for a in range(1, 102):
+    x.append(a)
+ 
+  plt.plot(x, y)
+
+  plt.show()
+
+  st_dev_minus_plus = np.std(liste)
   st_dev = (abs(st_dev_minus_plus))
 
   print("Die Standartabweichung der Gewichtung ist", st_dev)
@@ -155,7 +166,7 @@ def text():
   -Krankenhaus/Krankenwagen Verband benutzt. (Auch Bundeswehr)
   """)
 
-#text()sdfsdf
+#text()
 
 #---------------------------------------------------------------------------------------------------------
 
