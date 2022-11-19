@@ -7,7 +7,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-print("""
+
+def title():
+  print("""
 ██╗     ██╗   ██╗███████╗ ██████╗ ███████╗███╗   ██╗██████╗ ███████╗████████╗███████╗██╗  ██╗████████╗ ██████╗ ██████╗ 
 ██║     ██║   ██║██╔════╝██╔════╝ ██╔════╝████╗  ██║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██║ ██╔╝╚══██╔══╝██╔═══██╗██╔══██╗
 ██║     ██║   ██║█████╗  ██║  ███╗█████╗  ██╔██╗ ██║██║  ██║█████╗     ██║   █████╗  █████╔╝    ██║   ██║   ██║██████╔╝
@@ -16,7 +18,15 @@ print("""
 ╚══════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 von Peter, Marc und Alex
 
-""")
+  """)
+
+
+
+
+
+
+
+
 
 
 #---------------------------------------------------------------------------------------------------------
@@ -51,21 +61,11 @@ def std():
   liste = excel_datei.iloc[:, 9]
   #print("List : " + str(list))
 
-  data = pd.read_excel("dateien/fragen.xlsx")
-
-  y= data["Herzschlag"][:101]
-  x = []
-
-  for a in range(1, 102):
-    x.append(a)
- 
-  plt.plot(x, y)
-
-  plt.show()
-
   st_dev_minus_plus = np.std(liste)
   st_dev = (abs(st_dev_minus_plus))
 
+  print("")
+  print("----------------------------------------------------------------")
   print("Die Standartabweichung der Gewichtung ist", st_dev)
   print("----------------------------------------------------------------")
   print("")
@@ -82,11 +82,29 @@ def std():
     print("Wir glauben dir, die Wahrscheinlichkeit, dass du die Wahrheit sagst ist sehr hoch")
   else:
     print("Es ist ein Fehler unterlaufen!")
+
+
+  
+def diagramm():
+  data = pd.read_excel("dateien/fragen.xlsx")
+
+  y = data["Herzschlag"][:101]
+  x = []
+
+  for a in range(1, 102):
+    x.append(a)
+ 
+  plt.plot(x, y)
+
+  plt.show()
     
   
 #---------------------------------------------------------------------------------------------------------
 # Programm an sich (Text)
 def text():
+  print("")
+  print("----------------------------------------------------------------")
+  print("")
 
   print_schneller("Hallo! Sie sind hier da sie ein Verdächtiger im Mordfall von Ulrike sind.")
 
@@ -498,11 +516,29 @@ def fragen():
   time.sleep(3)
 
 
+os.system("cls")
+
+title()
+
+def Ende():
+  print("""
+  """)
+  print("Danke für dein Interesse an unserem Mordfall!")
+
+
+text_yn = input("Willst du den Text lesen, oder kennst du ihn schon? Ja/Nein: ")
+fragen_yn = input("Willst du die Fragen lesen, oder kennst du diese? Ja/Nein: ")
+diagramm_yn = input("Willst du ein Diagramm zu dem Herzschlag sehen? Ja/Nein: ")
+
+if text_yn == "Ja":
+  text()
+if fragen_yn == "Ja":
+    fragen()
+if diagramm_yn == "Ja":
+ diagramm()
+
+Ende()
 
 
 
-text()
-fragen()
-std() 
 
-time.sleep(200)
