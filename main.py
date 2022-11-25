@@ -545,7 +545,7 @@ def Ende():
   print("""
   """)
   print("Danke für dein Interesse an unserem Mordfall!")
-
+  time.sleep(10)
 
 text_yn = input("Willst du den Text lesen, oder kennst du ihn schon? Ja/Nein: ")
 fragen_yn = input("Willst du die Fragen lesen, oder kennst du diese? Ja/Nein: ")
